@@ -19,7 +19,8 @@ public class DataQ {
         this.dbHelper = new DBHelper(context);
     }
 
-    public void insertData(
+    public void insertData
+            (
             int id,
             String title,
             String genre,
@@ -72,7 +73,8 @@ public class DataQ {
         // Get from cursor into a list
         int titleColIndex = cursor.getColumnIndex(model.DatabaseEntry.COL_TITLE);
         List<String> items = new ArrayList<>();
-        while(cursor.moveToNext()) {
+        while(cursor.moveToNext())
+        {
             String title = cursor.getString(titleColIndex);
             items.add(title);
         }
